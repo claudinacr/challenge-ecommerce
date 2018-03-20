@@ -35,7 +35,12 @@ return(
 
       buttonRemove.addEventListener('click', function(){
         const removeD = document.querySelector('.divContainer')
-        removeD.remove(removeD.selectedIndex);      })
+        removeD.remove(removeD.selectedIndex);      
+        
+        const actuall = document.querySelector('.TotalR').textContent
+      document.querySelector('.TotalR').innerHTML='';
+      document.querySelector('.TotalR').appendChild(document.createTextNode(parseInt(actuall) - parseInt(producto.price)))
+        })
         
 
       }}>Add to Cart
