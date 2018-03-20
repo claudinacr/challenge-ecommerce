@@ -10,7 +10,9 @@ const App =()=>{
       return(
         <div className='App'>
           <Total></Total>
-          <ContainerCart></ContainerCart>
+          <ContainerCart>
+            
+          </ContainerCart>
         <Title></Title>
         <div className='Container'>
           <Product>

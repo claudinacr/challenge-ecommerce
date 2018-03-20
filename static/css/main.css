@@ -1,15 +1,21 @@
 /* you can add any styles you think could improve user's experience */
-.Container{
+.Container, .ContainerCart{
   display: flex;
   flex-direction: row;
   text-align: center;
   background-color:papayawhip;
 }
 
-.productt{
+.productt {
   margin-left: 1em;
 }
 
+.divContainer{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+
+}
 button{
   background-color: purple;
   border: none;
@@ -30,4 +36,8 @@ border: 0px solid #000000;
 -moz-border-radius: 2px 2px 2px 2px;
 -webkit-border-radius: 2px 2px 2px 2px;
 border: 0px solid #000000;
+}
+
+.ContainerCart{
+  margin-top: 2em;
 }
