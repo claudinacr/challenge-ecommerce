@@ -1,1 +1,33 @@
 /* you can add any styles you think could improve user's experience */
+.Container{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color:papayawhip;
+}
+
+.productt{
+  margin-left: 1em;
+}
+
+button{
+  background-color: purple;
+  border: none;
+  width: 8em;
+  height: 3em;
+  border-radius: 2px 2px 2px 2px;
+-moz-border-radius: 2px 2px 2px 2px;
+-webkit-border-radius: 2px 2px 2px 2px;
+border: 0px solid #000000;
+}
+
+.buttonTotal{
+  background-color: #56B14C;
+  border: none;
+  width: 8em;
+  height: 3em;
+  border-radius: 2px 2px 2px 2px;
+-moz-border-radius: 2px 2px 2px 2px;
+-webkit-border-radius: 2px 2px 2px 2px;
+border: 0px solid #000000;
+}
