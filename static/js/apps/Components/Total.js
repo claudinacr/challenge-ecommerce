@@ -1,7 +1,7 @@
 import React from 'react';
 const Total = () =>(
-  <div>
-    <button className='buttonTotal'>Total <p className='TotalR'>0</p></button>
+  <div className='Total'>
+    <button className='buttonTotal'>Total &nbsp;<span className='TotalR'>0</span></button>
   </div>
 )
 export default Total;

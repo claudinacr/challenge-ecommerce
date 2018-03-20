@@ -15,9 +15,7 @@
   flex-direction: column;
   text-align: center;
   margin-left: 1em;
-  font-weight: bold;
-  font-size: 1.2em;
-
+  
 }
 button{
   background-color: purple;
@@ -33,14 +31,32 @@ border: 0px solid #000000;
 .buttonTotal{
   background-color: #56B14C;
   border: none;
-  width: 8em;
+  width: 10em;
   height: 3em;
   border-radius: 2px 2px 2px 2px;
 -moz-border-radius: 2px 2px 2px 2px;
 -webkit-border-radius: 2px 2px 2px 2px;
 border: 0px solid #000000;
+
 }
 
 .ContainerCart{
   margin-top: 2em;
+    text-align: center;
+
 }
+
+.buttonTotal{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.buttonTotal{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
