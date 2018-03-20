@@ -1,9 +1,20 @@
 /* you can add any styles you think could improve user's experience */
-.Container, .ContainerCart{
+.Container{
   display: flex;
   flex-direction: row;
   text-align: center;
   background-color:papayawhip;
+}
+
+.buttonRemove{
+  color: white;
+  font-weight: bold;
+}
+
+.ContainerCart{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
 }
 
 .productt {
@@ -58,5 +69,7 @@ border: 0px solid #000000;
   text-align: center;
   align-items: center;
   align-content: center;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 

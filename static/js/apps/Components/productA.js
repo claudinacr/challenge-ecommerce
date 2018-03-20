@@ -27,9 +27,17 @@ return(
       divContainer.appendChild(image)
       divContainer.appendChild(document.createElement('h3')).appendChild(document.createTextNode(producto.name))
       divContainer.appendChild(document.createElement('h3')).appendChild(document.createTextNode(producto.price))
-
+      const buttonRemove = document.createElement('button');
+      buttonRemove.className='buttonRemove';
+      buttonRemove.innerText='Remove'
+      divContainer.appendChild(buttonRemove)
       ContainerCart.appendChild(divContainer)
-      
+
+      buttonRemove.addEventListener('click', function(){
+        const removeD = document.querySelector('.divContainer')
+        removeD.remove(removeD.selectedIndex);      })
+        
+
       }}>Add to Cart
     </button>
   </div>
