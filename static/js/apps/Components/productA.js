@@ -34,12 +34,13 @@ return(
       ContainerCart.appendChild(divContainer)
 
       buttonRemove.addEventListener('click', function(){
-        const removeD = document.querySelector('.divContainer')
-        removeD.remove(removeD.selectedIndex);      
-        
+        const Contenedor = event.target.parentNode
+        const Precio = event.target.parentNode.firstChild.nextSibling.nextSibling.textContent
         const actuall = document.querySelector('.TotalR').textContent
-      document.querySelector('.TotalR').innerHTML='';
-      document.querySelector('.TotalR').appendChild(document.createTextNode(parseInt(actuall) - parseInt(producto.price)))
+        document.querySelector('.TotalR').innerHTML='';
+        document.querySelector('.TotalR').appendChild(document.createTextNode(parseInt(actuall) - parseInt(Precio)))
+        Contenedor.innerHTML='';
+
         })
         
 
