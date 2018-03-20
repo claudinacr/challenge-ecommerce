@@ -71,6 +71,8 @@ border: 0px solid #000000;
 .ContainerCart{
   margin-top: 2em;
     text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
 
 }
 
@@ -97,3 +99,4 @@ border: 0px solid #000000;
 img{
   border: 2px black solid;
 }
+

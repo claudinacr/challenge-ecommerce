@@ -24,7 +24,13 @@ return(
       image.setAttribute('src', imageLink)
       divContainer.appendChild(image)
       divContainer.appendChild(document.createElement('h3')).appendChild(document.createTextNode(producto.name))
-      divContainer.appendChild(document.createElement('h3')).appendChild(document.createTextNode(producto.price))
+      const divPrice = document.createElement('div');
+      divPrice.className='divPrice';
+      const simbol = divPrice.appendChild(document.createElement('span')).appendChild(document.createTextNode('$'))
+      const content = divPrice.appendChild(document.createElement('span')).appendChild(document.createTextNode(producto.price))
+      divContainer.appendChild(simbol)
+      divContainer.appendChild(content)
+
       const buttonRemove = document.createElement('button');
       buttonRemove.className='buttonRemove';
       buttonRemove.innerText='Remove'
@@ -33,7 +39,8 @@ return(
 
       buttonRemove.addEventListener('click', function(){
         const Contenedor = event.target.parentNode
-        const Precio = event.target.parentNode.firstChild.nextSibling.nextSibling.textContent
+        const Precio = event.target.parentNode.firstChild.nextSibling.nextSibling.nextSibling.textContent
+        console.log(Precio)
         const actuall = document.querySelector('.TotalR').textContent
         document.querySelector('.TotalR').innerHTML='';
         document.querySelector('.TotalR').appendChild(document.createTextNode(parseInt(actuall) - parseInt(Precio)))
