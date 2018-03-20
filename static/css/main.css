@@ -1,20 +1,24 @@
 /* you can add any styles you think could improve user's experience */
+
 .Container{
   display: flex;
   flex-direction: row;
-  text-align: center;
   background-color:papayawhip;
+  justify-content: center;
 }
 
 .buttonRemove{
   color: white;
   font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ContainerCart{
   display: flex;
   flex-direction: row;
   text-align: center;
+  justify-content: center;
 }
 
 .productt {
@@ -24,8 +28,11 @@
 .divContainer{
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: center !important;
+  justify-content: center !important;
+
   margin-left: 1em;
+  
   
 }
 button{
@@ -73,3 +80,6 @@ border: 0px solid #000000;
   font-size: 1.2em;
 }
 
+.Product{
+  text-align: center;
+}

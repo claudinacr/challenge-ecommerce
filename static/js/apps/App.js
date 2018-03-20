@@ -11,11 +11,11 @@ const App =()=>{
         <div className='App'>
           <Total></Total>
           <ContainerCart>
-            
+
           </ContainerCart>
         <Title></Title>
         <div className='Container'>
-          <Product>
+          <Product className='Product'>
           </Product>
           </div>
         </div>
