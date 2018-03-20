@@ -93,3 +93,7 @@ border: 0px solid #000000;
 .Product{
   text-align: center;
 }
+
+img{
+  border: 2px black solid;
+}
