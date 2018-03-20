@@ -25,8 +25,8 @@ return(
       const ContainerCart = document.querySelector('.ContainerCart');
       image.setAttribute('src', imageLink)
       divContainer.appendChild(image)
-      divContainer.appendChild(document.createElement('h3').appendChild(document.createTextNode(producto.name)))
-      divContainer.appendChild(document.createElement('h3').appendChild(document.createTextNode(producto.price)))
+      divContainer.appendChild(document.createElement('h3')).appendChild(document.createTextNode(producto.name))
+      divContainer.appendChild(document.createElement('h3')).appendChild(document.createTextNode(producto.price))
 
       ContainerCart.appendChild(divContainer)
       
